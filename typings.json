@@ -1,0 +1,4 @@
+{
+  "name": "xhr2",
+  "main": "lib/xhr2.d.ts"
+}
