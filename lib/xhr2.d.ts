@@ -136,6 +136,7 @@ interface XMLHttpRequest extends EventTarget, XMLHttpRequestEventTarget {
   addEventListener(type: "timeout", listener: (ev: ProgressEvent) => any, useCapture?: boolean): void;
   addEventListener(type: string, listener: EventListenerOrEventListenerObject, useCapture?: boolean): void;
   nodejsSet(url: any): any;
+  new(): XMLHttpRequest;
 }
 
 declare var XMLHttpRequest: {
