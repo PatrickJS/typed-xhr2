@@ -135,6 +135,7 @@ interface XMLHttpRequest extends EventTarget, XMLHttpRequestEventTarget {
   addEventListener(type: "readystatechange", listener: (ev: ProgressEvent) => any, useCapture?: boolean): void;
   addEventListener(type: "timeout", listener: (ev: ProgressEvent) => any, useCapture?: boolean): void;
   addEventListener(type: string, listener: EventListenerOrEventListenerObject, useCapture?: boolean): void;
+  nodejsSet(url: any): any;
 }
 
 declare var XMLHttpRequest: {
@@ -148,7 +149,6 @@ declare var XMLHttpRequest: {
   OPENED: number;
   UNSENT: number;
   create(): XMLHttpRequest;
-  nodejsSet(url: any): any;
 }
 
 interface XMLHttpRequestUpload extends EventTarget, XMLHttpRequestEventTarget {
